@@ -41,7 +41,7 @@ The formulation is evaluated across six rigorous physical and analytical benchma
 - **Angular Momentum Conservation:** Vector error of the total spatial angular momentum $\|\Delta \mathbf{L}\| / \|\mathbf{L}_0\| < 10^{-8}$.
 
 <p align="center">
-  <img src="assets/verification_tests.png" alt="Verification Tests" width="800">
+  <img src="ASSETS/advanced_3body_tests.png" alt="Verification Tests" width="800">
 </p>
 
 ### 2. Chaotic Divergence & Lyapunov Sensitivity
@@ -56,7 +56,7 @@ Validation of triangular libration point stability in the Circular Restricted Th
 - **Unstable Regime ($\mu = 0.05 > \mu_{\text{crit}}$):** Rapid exponential departure driven by positive real eigenvalue components.
 
 <p align="center">
-  <img src="assets/routh_stability.png" alt="Routh Stability Criterion" width="750">
+  <img src="ASSETS/routh_stability_criterion_test.png" alt="Routh Stability Criterion" width="750">
 </p>
 
 ### 5. Zero-Velocity Curves & Hill Surfaces
@@ -67,7 +67,7 @@ Topological mapping of the Jacobi energy integral $C$ across the four fundamenta
 4. $C < C_{L4,5}$: Complete disappearance of forbidden regions (unbounded motion).
 
 <p align="center">
-  <img src="assets/hill_surfaces.png" alt="Hill Surfaces and Gateways" width="750">
+  <img src="ASSETS/hill_surfaces_zero_velocity.png" alt="Hill Surfaces and Gateways" width="750">
 </p>
 
 ---
