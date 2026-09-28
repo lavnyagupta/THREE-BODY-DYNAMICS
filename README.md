@@ -1,11 +1,6 @@
 # Non-Planar Three-Body Dynamics: Constrained Attitude Coupling & Verification Suite
 
 A computational dynamics package and analytical Lagrangian framework for simulating non-planar multi-body systems in generalized curvilinear coordinates, validated against classical benchmarks in celestial mechanics.
-
-<p align="center">
-  <img src="assets/tilted_frames.svg" alt="Tilted Coordinate Frames" width="520">
-</p>
-
 ## Overview
 
 Textbook multi-body formulations frequently enforce coplanar simplifications. This project develops an analytical Lagrangian framework in generalized spherical coordinates $(R_k, \alpha_k, \phi_k)$ across independently tilted orbital planes:
@@ -39,11 +34,6 @@ The formulation is evaluated across six rigorous physical and analytical benchma
 ### 1. Noether Invariant Preservation
 - **Energy Conservation:** Relative total energy error maintained at $\Delta E/E_0 < 10^{-6}$ over integration cycles.
 - **Angular Momentum Conservation:** Vector error of the total spatial angular momentum $\|\Delta \mathbf{L}\| / \|\mathbf{L}_0\| < 10^{-8}$.
-
-<p align="center">
-  <img src="ASSETS/advanced_3body_tests.png" width="800">
-</p>
-
 ### 2. Chaotic Divergence & Lyapunov Sensitivity
 - Quantified exponential divergence of phase-space separation $\|q_1(t) - q_2(t)\|$ from an initial perturbation of $\delta = 10^{-7}$, demonstrating deterministic chaos during close three-body encounters.
 
@@ -54,22 +44,12 @@ The formulation is evaluated across six rigorous physical and analytical benchma
 Validation of triangular libration point stability in the Circular Restricted Three-Body Problem (CR3BP):
 - **Stable Regime ($\mu = 0.01215 < \mu_{\text{crit}}$):** Bounded epicyclic libration around the $L_4$ equilibrium point.
 - **Unstable Regime ($\mu = 0.05 > \mu_{\text{crit}}$):** Rapid exponential departure driven by positive real eigenvalue components.
-
-<p align="center">
-  <img src="ASSETS/routh_stability_criterion_test.png" alt="Routh Stability Criterion" width="750">
-</p>
-
 ### 5. Zero-Velocity Curves & Hill Surfaces
 Topological mapping of the Jacobi energy integral $C$ across the four fundamental gateway transition regimes:
 1. $C > C_{L1}$: Closed gateways isolating the primary bodies.
 2. $C_{L2} < C < C_{L1}$: Opening of the $L_1$ interior bottleneck permitting Earth-Moon transfer.
 3. $C_{L3} < C < C_{L2}$: Opening of the $L_2$ exterior neck allowing heliocentric escape.
 4. $C < C_{L4,5}$: Complete disappearance of forbidden regions (unbounded motion).
-
-<p align="center">
-  <img src="ASSETS/hill_surfaces_zero_velocity.png" alt="Hill Surfaces and Gateways" width="750">
-</p>
-
 ---
 
 ## Numerical Limitations & Boundary Behaviors
