@@ -78,16 +78,6 @@ In the interest of rigorous computational evaluation, the following boundary beh
 - **Coordinate Singularities:** Formulating motion in spherical coordinates introduces gimbal-lock singularities at polar crossings ($\alpha \to \pm \pi/2$) and coordinate divergence near periapsis close encounters ($R \to 0$). Future iterations will transition translational integration into regularized Kustaanheimo-Stiefel (KS) or Cartesian states.
 - **Attitude Sub-manifold:** The current model enforces zero axial spin roll along the line-of-sight vector ($\vec{\omega}_k \cdot \hat{r}_k = 0$). Extending this to an unconstrained 18-DOF system requires decoupling Euler angles/quaternions and integrating MacCullagh quadrupole gravitational potentials.
 
----
-
-## Running the Verification Suite
-
-```bash
-git clone [https://github.com/your-username/three-body-dynamics.git](https://github.com/your-username/three-body-dynamics.git)
-cd three-body-dynamics
-pip install -r requirements.txt
-
-# Run individual verification benchmarks
 python benchmarks/test_routh_stability.py
 python benchmarks/plot_hill_surfaces.py
 python benchmarks/test_lagrange_l4l5.py
