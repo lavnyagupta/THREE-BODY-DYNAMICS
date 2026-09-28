@@ -41,7 +41,7 @@ The formulation is evaluated across six rigorous physical and analytical benchma
 - **Angular Momentum Conservation:** Vector error of the total spatial angular momentum $\|\Delta \mathbf{L}\| / \|\mathbf{L}_0\| < 10^{-8}$.
 
 <p align="center">
-  <img src="ASSETS/advanced_3body_tests.png" alt="Verification Tests" width="800">
+  <img src="ASSETS/advanced_3body_tests.png" width="800">
 </p>
 
 ### 2. Chaotic Divergence & Lyapunov Sensitivity
